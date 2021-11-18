@@ -12,26 +12,26 @@ public class PasoParam{
  *@param x Valor de tipo double que representa el valor de un número real
  *@return double x
  */
-    //Pasamos al método un parámetro por valor (el valor de la variable centigrados)
+    //Pasamos al método un parámetro por valor (el valor de la variable x)
      public static double cuadrado(double x){
-	 //Asignamos al parámetro el valor de 100
+	 //Asignamos al parámetro el valor de multiplicarse por sí mismo
 	x=x*x;
-	//Regresamos el valor de centigrados tras usar la fórmula para convertirlos a fahrenheit
+	//Regresamos el valor de x
 	return x;
 
     }
  /**
- *Método que convierte una cantidad de grados centigrados a grados Farenheit
+ *Método que convierte una calcula la potencia 2 de un número
  *@author Alcántara Estrada Kevin Isaac
  *@version 1.0
- *@param Grados Objeto de la clase Grados
- *@return double centigrados 
+ *@param n Objeto de la clase Num
+ *@return double Devuelve el valor del atributo "valor" del objeto de la clase Num
  */
     //En este caso pasamos al método un parámetro por referencia, la referencia corresponde al espacio de memoria donde se encuentra almacenado el objeto
      public static double potencia2(Num n){
-	 //Se le asigna el valor de 100 al atributo "cantidad" del objeto de la clase Grados
+	 //Se le asigna el valor de multiplicarse por sí mismo al atributo "valor" del objeto de la clase Num
 	 n.setValor((n.getValor()*n.getValor()));
-	 //Se regresa el valor de la cantidad de grados en el objeto tras usar la fórmula para convertirlos a Farenheit
+	 //Se regresa el valor del atributo "valor" del objeto de la clase
 	 return n.getValor();
 
     }
@@ -71,7 +71,7 @@ public class PasoParam{
 	  //Asignamos a la variable centigrados el valor que devuelve el método
 	  x=cuadrado(x);
 	   //Se muestra el nuevo valor del parámetro
-	  System.out.println("Ahora el valor de la variabla que pasamos como parámetro por valor es de: "+ x);
+	  System.out.println("/nAhora el valor de la variable que pasamos como parámetro por valor es de: "+ x);
 
 	 
      }
