@@ -12,16 +12,16 @@ public class PasoParam{
  *@param x Valor de tipo double que representa el valor de un número real
  *@return double x
  */
-    //Pasamos al método un parámetro por valor (el valor de la variable x)
+    //Pasamos al método un parámetro por valor (el valor de la variable x), por lo que cual se toma una "copia" del valor contenido en la variable x (este valor se almacena en un espacio de memoria distinto)
      public static double cuadrado(double x){
 	 //Asignamos al parámetro el valor de multiplicarse por sí mismo
 	x=x*x;
-	//Regresamos el valor de x
+	//Regresamos el valor de x, al estar contenido en otro espacio de memoria, no se afecta el valor original de la variable x dentro del método main
 	return x;
 
     }
  /**
- *Método que convierte una calcula la potencia 2 de un número
+ *Método que calcula la potencia 2 de un número
  *@author Alcántara Estrada Kevin Isaac
  *@version 1.0
  *@param n Objeto de la clase Num
@@ -29,9 +29,9 @@ public class PasoParam{
  */
     //En este caso pasamos al método un parámetro por referencia, la referencia corresponde al espacio de memoria donde se encuentra almacenado el objeto
      public static double potencia2(Num n){
-	 //Se le asigna el valor de multiplicarse por sí mismo al atributo "valor" del objeto de la clase Num
+	 //Se le asigna el valor de multiplicarse por sí mismo al atributo "valor" del objeto de la clase Num, (este valor se guarda en el mismo espacio de memoria que donde estaba el valor original del atributo "valor" del objeto de la clase)
 	 n.setValor((n.getValor()*n.getValor()));
-	 //Se regresa el valor del atributo "valor" del objeto de la clase
+	 //Se regresa el valor del atributo "valor" del objeto de la clase, como trabajamos con la referencia del objeto, este valor que devolvemos también estará presente en el valor del atributo "valor" del objeto de la clase dentro del método main
 	 return n.getValor();
 
     }

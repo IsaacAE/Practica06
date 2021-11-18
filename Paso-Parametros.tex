@@ -15,7 +15,12 @@ Alcántara Estrada Kevin Isaac\\
         {\large El paso de parámetros por valor se caracteriza en que la información de la variable se almacena en una dirección de memoria diferente al recibirla en la función, es decir, se crea una copia local de la variable dentro de la función; por lo que si el valor de esa variable (de la copia) cambia, no afecta a la variable original, sólo se modifica dentro del contexto de la función o subrutina.}\\\\
 
         \section{Paso de parámetros por referencia}
-{\large El paso de parámetros por referencia consiste en proporcionar en proporcionar a la función, método o subrutina la dirección de memoria del dato (ésta direección de memoria será el argumento); por lo que se maneja directamente la variable original, pues se tiene un único valor referenciado desde dos puntos diferentes, la rutina principal y la subrutina; por ello, cualquier acción sobre el parámetro modifica también el valor de este fuera de la subrutina, función o método.}\\\\
+                {\large El paso de parámetros por referencia consiste en proporcionar en proporcionar a la función, método o subrutina la dirección de memoria del dato (ésta direección de memoria será el argumento); por lo que se maneja directamente la variable original, pues se tiene un único valor referenciado desde dos puntos diferentes, la rutina principal y la subrutina; por ello, cualquier acción sobre el parámetro modifica también el valor de este fuera de la subrutina, función o método.}\\\\
+
+
+                 \section{¿Cómo conseguimos que el valor se modifique en el método main cuando hacemos un paso de parámetros por valor?}
+                         {\large En el caso de nuestro programa, sabemos que al trabajar con los parámetros dentro de un método que no es main y devolver el valor modificado de dicho parámetro, en el caso del paso de parámetros por valor, el valor del parámetro no es modificado en el método main; por ello, para que la modificación de ese valor se vea reflejado dentro del método main, lo que tendríamos que hacer es asignar el valor que devuelve el método a la variable que pasamos como parámetro por valor en el método, es decir: x=metodo(x);}\\\\
+                         {\large De esta manera, el valor de x en el método main será el mismo que se obtuvo tras modificarlo en el método al que pasamos el parámetro por valor (siendo el valor de x dicho parámetro).}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.18)  16 NOV 2021 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.18)  18 NOV 2021 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -83,7 +83,7 @@ File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [20pt].
 
-No file Paso-Parametros.aux.
+(./Paso-Parametros.aux)
 \openout1 = `Paso-Parametros.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -100,6 +100,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -191,23 +192,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Paso-Parametros.aux) ) 
 Here is how much of TeX's memory you used:
- 1755 strings out of 481252
- 26479 string characters out of 5915888
- 305345 words of memory out of 5000000
- 18721 multiletter control sequences out of 15000+600000
+ 1758 strings out of 481252
+ 26528 string characters out of 5915888
+ 308336 words of memory out of 5000000
+ 18722 multiletter control sequences out of 15000+600000
  407070 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,6n,74p,538b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,6n,74p,599b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
 <
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Paso-Parametros.pdf (1 page, 48393 bytes).
+Output written on Paso-Parametros.pdf (1 page, 51907 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
