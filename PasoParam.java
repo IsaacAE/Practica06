@@ -6,18 +6,18 @@
 
 public class PasoParam{
     /**
- *Método que convierte una cantidad de grados centigrados a grados Farenheit
+ *Método que sirve para calcular la potencia 2 de un número
  *@author Alcántara Estrada Kevin Isaac
  *@version 1.0
- *@param centigrados Cantidad de grados centigrados
- *@return double centigrados 
+ *@param x Valor de tipo double que representa el valor de un número real
+ *@return double x
  */
     //Pasamos al método un parámetro por valor (el valor de la variable centigrados)
-     public static double centigradosAFarenheit(double centigrados){
+     public static double cuadrado(double x){
 	 //Asignamos al parámetro el valor de 100
-	centigrados=100;
+	x=x*x;
 	//Regresamos el valor de centigrados tras usar la fórmula para convertirlos a fahrenheit
-	return centigrados*1.8+32;
+	return x;
 
     }
  /**
@@ -28,11 +28,11 @@ public class PasoParam{
  *@return double centigrados 
  */
     //En este caso pasamos al método un parámetro por referencia, la referencia corresponde al espacio de memoria donde se encuentra almacenado el objeto
-     public static double gradosAFarenheit(Grados c){
+     public static double potencia2(Num n){
 	 //Se le asigna el valor de 100 al atributo "cantidad" del objeto de la clase Grados
-	 c.setCantidad(100);
+	 n.setValor((n.getValor()*n.getValor()));
 	 //Se regresa el valor de la cantidad de grados en el objeto tras usar la fórmula para convertirlos a Farenheit
-	 return c.getCantidad()*1.8+32;
+	 return n.getValor();
 
     }
    
@@ -41,30 +41,39 @@ public class PasoParam{
  *Método main para ver la diferencia entre paso de parámetros por valor y paso de parámetros por referencia
  *@author Alcántara Estrada Kevin Isaac
  *@version 1.0
- *@param centigrados Cantidad de grados centigrados
- *@return double centigrados 
+ *@param args 
  */
     public static void main(String[] args){
-	//Se crea un nuevo objeto de la clase Grados para su uso
-	Grados c = new Grados();
+	//Se crea un nuevo objeto de la clase Num para su uso
+	Num n = new Num();
 	//Se declara una variable de tipo double para trabajar con esta
-	 double centigrados = 50;
+	 double x = 8;
 	 //Paso de parámetros por valor
 	 System.out.println("---PASO DE PARÁMETRO POR VALOR--- \n");
 	 //Se muestra el valor del parámetro antes de trabajar con este
-	 System.out.println("El valor del parámetro que pasamos por valor actualmente es de: " + centigrados);
+	 System.out.println("El valor del parámetro que pasamos por valor actualmente es de: " + x);
 	 //Se muestra el resultado de trabajar con el parámetro
-	 System.out.println("El valor que se obtiene de trabajar con dicho parámetro es de: " + centigradosAFarenheit(centigrados));
+	 System.out.println("El valor que se obtiene de trabajar con dicho parámetro es de: " + cuadrado(x));
 	 //Se muestra el valor del parámetro después de haber trabajado con este 
-	 System.out.println("Ahora el valor del parámetro que pasamos al método es de: "+ centigrados);
+	 System.out.println("Ahora el valor del parámetro que pasamos al método es de: "+ x);
 	  //Paso de parámetros por referencia
 	 	 System.out.println("\n---PASO DE PARÁMETRO POR REFERENCIA---");
 		  //Se muestra el valor del parámetro antes de trabajar con este
-	 System.out.println("\nEl valor del parámetro que pasamos por referencia  es de: " + c.getCantidad());
+	 System.out.println("\nEl valor del parámetro que pasamos por referencia  es de: " + n.getValor());
 	 //Se muestra el resultado de trabajar con el parámetro
-	 System.out.println("El valor que se obtiene de trabajar con dicho parámetro es de: " + gradosAFarenheit(c));
+	 System.out.println("El valor que se obtiene de trabajar con dicho parámetro es de: " + potencia2(n));
 	 	 //Se muestra el valor del parámetro después de haber trabajado con este
-	 System.out.println("Ahora valor del parámetro que habíamos pasado referencia  es de: " +c.getCantidad());
+	 System.out.println("Ahora valor del parámetro que habíamos pasado referencia  es de: " +n.getValor());
+	 //Se muestra cómo se hace para que se modifique el valor original de la variable que pasamos como parámetro por valor
+	  System.out.println("\n---MODIFICAR EL VALOR DEL PARÁMETRO POR PASO DE VALOR--- \n");
+	   //Se muestra cómo se hace para que se modifique el valor original de la variable que pasamos como parámetro por valor
+	  System.out.println("Para que el parámetro que pasamos por valor sea modificado, debemos asignar el valor que devuelve el método en donde lo implementamos a la variable que pasamos como parámetro, es decir: x=cuadrado(x);");
+	  //Asignamos a la variable centigrados el valor que devuelve el método
+	  x=cuadrado(x);
+	   //Se muestra el nuevo valor del parámetro
+	  System.out.println("Ahora el valor de la variabla que pasamos como parámetro por valor es de: "+ x);
+
+	 
      }
 
    
